@@ -1,0 +1,433 @@
+% -*- TeX-engine: luatex; -*-
+
+%     ___                             ___                  __   _______    __
+%    /   |  ____  ___  ___  ____ _   /   |____  ____ _____/ /  / ____/ |  / /
+%   / /| | / __ \/ _ \/ _ \/ __ `/  / /| /_  / / __ `/ __  /  / /    | | / /
+%  / ___ |/ / / /  __/  __/ /_/ /  / ___ |/ /_/ /_/ / /_/ /  / /___  | |/ /
+% /_/  |_/_/ /_/\___/\___/\__, /  /_/  |_/___/\__,_/\__,_/   \____/  |___/
+%                           /_/
+
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{romannum}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[left=1.2in,top=1in,right=1.2in,bottom=1.1in]{geometry}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+% \input{glyphtounicode}
+
+\usepackage[T1]{fontenc}
+\usepackage{inconsolata}
+
+\usepackage{fontspec}
+% \newfontfamily{\FAS}{fa6-Sharp-Regular-400.otf}
+% \newfontfamily{\FAS}[Scale = 1]{fa6Pro-Regular-400.otf}
+\newfontfamily{\FAS}[Scale = 1]{fa6Pro-Regular-400.otf}
+\setmonofont{Iosevka}[SizeFeatures={Size=11}]
+
+% \usepackage{helvet}
+% \renewcommand\familydefault{\sfdefault}
+% \usepackage{fontspec}
+% \setmainfont{Cambria}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+
+
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Muhammad Aneeq Asif} \\ \vspace{3pt}
+    Bahawalpur, Pakistan 63210 \\ \vspace{2pt}
+    \href{mailto:aneeqasifazada3@gmail.com}{\raisebox{-0.1\height}\faEnvelope\  \underline{aneeqasifazada3@gmail.com}} ~
+    \href{https://www.linkedin.com/in/aneeqazad}{\raisebox{-0.1\height}\faLinkedin\ \underline{linkedin.com/in/aneeqazad}}  ~
+    \href{https://github.com/Aneeqasif}{\raisebox{-0.1\height}\faGithub\ \underline{github.com/Aneeqasif}}
+    \vspace{5pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+%% \section{\faLightbulb[regular] Education}
+\section[Education]{{\FAS  }  Education} %
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pakistan Institute of Engineering and Applied Sciences (PIEAS)}{Sep 2019 -- July 2023}
+      {Bachelor of Science in Physics}{Nilore, Islamabad, Pakistan}
+  \resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Punjab Group of Colleges (PGC)}{Sep 2017 -- July 2019}
+      {Higher Secondary School Certificate with Mathematics}{Bahawalpur, Pakistan}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%------RELEVANT COURSEWORK-------
+\section[Relevant Coursework]{{\small \FAS{} }  Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-3pt, parsep=3pt, label=\faCaretRight]
+                \item \small Solid State Physics \Romannum{1}, \Romannum{2}
+                \item Electromagnetic Theory
+                \item Physics of Semiconductor Devices
+                \item Thermal and Statistical Physics
+                \item Computer Simulations in Physics
+                \item Quantum Mechanics
+                \item Introduction to Quantum Optics
+                \item Modern Physics
+                \item Applied Chemistry
+                \item Mathematical Methods of Physics
+                \item Optics
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+\vspace{1pt}
+%-----------EXPERIENCE-----------
+\section[Experience]{{\FAS  } Experience}
+% \section[Experience]{{\small \faIcon[regular]{arrow-alt-circle-up}} Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {National Centre for Physics}{July 2022 - Sep 2022}
+      {Intern}{Islamabad, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Designed and developed ANN model in \textbf{\texttt{\small PyTorch}} to predict the lattice energy of the crystal based on elemental properties and structural features.}
+        \resumeItem{Hands on experience on using  \textbf{ \texttt{PROPhet} } machine learning C++ library.}
+        \resumeItem{Thorough study of various fundamental machine learning models, including Decision Trees, PCA, Linear, Polynomial, Ridge, Logistic, and Lasso Regression, as well as splines, curve fitting, and Cross Validation techniques.}
+        \resumeItem{Cleaning and pre-processing of Data generated by VASP in Python.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {PIEAS CISD HPC Department}{May 2019 -- August 2019}
+      {Volunteer}{Islamabad, Pakistan}
+      \resumeItemListStart
+      \resumeItem{Offered Linux expertise to deploy the EasyBuild framework and install 15 different computational software packages, including VASP, Quantum ESPRESSO, OpenFOAM and many machine learning libraries in HPC cluster \textbf{Dunamis} at my university. I Configured installations to work with different compiler toolchains, ensuring compatibility and optimization for diverse computational needs.}
+      \resumeItem{Setup and deployed Apptainer and Docker engine and installed the GPU-compliant Quantum Espresso Docker container from NVIDIA NGC Docker registry.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section[Projects]{{\FAS  }Projects}
+    % \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Machine Learning Assisted Discovery}  \hspace{2pt}   $|$ \emph{Final Year Research Project} \hspace{1.85in} \small \textbf{Sep 2022 - May 2023} \\ \small \textbf{of Superconductivity Equations
+} }{}
+          \vspace{-5pt}
+          \resumeItemListStart
+          \resumeItem{Successfully employed the Sure Independence Screening and Sparsifying Operator
+                    (SISSO) framework to enhance the Allen-Dynes Equations for modeling the critical
+                    temperature (Tc) of superconductivity.}
+           \resumeItem{This involves Symbolic regression of Material predictors that extracted form spectral functions, generated
+                    from Quantum Espresso EPW Package.}
+           \resumeItem{We successfully introduce a correction factor to Allen-Dynes
+                    equation of superconductivity that make the new formula more accurate and
+                    realistic in modeling the phenomenon.}
+          \resumeItemListEnd
+          \vspace{-15pt}
+
+      \resumeProjectHeading
+          {\textbf{3 node Open-Mpi mini Cluster} $|$ \emph{Linux, Bash, OpenMpi}}{March 2023}
+          \resumeItemListStart
+          \resumeItem{Single-handedly built a three-node HPC cluster using OpenMPI, a leading message passing interface (MPI) implementation for
+            parallel computing.}
+            \resumeItem{Configured Quantum Espresso and ensured seamless communication among nodes.}
+            \resumeItem{Implemented secure SSH access to the cluster nodes, ensuring remote accessibility for administration and job execution.}
+            \resumeItem{Created user-friendly documentation for cluster usage and Provided hands-on training to Junior fellows.}
+          \resumeItemListEnd
+          \vspace{-15pt}
+
+          \resumeProjectHeading
+          {\textbf{Ising model Mote-Carlo Simulation} $|$ \emph{Python, Numpy, Matplotlib}}{December 2022}
+          \resumeItemListStart
+            \resumeItem{Completed term project on Monte Carlo study to
+                        explore the behavior of the two-dimensional Ising model, a fundamental system in
+                        statistical mechanics.}
+            \resumeItem{Analyzed the system's phase transitions and critical phenomena.}
+          \resumeItemListEnd
+          \vspace{-15pt}
+
+
+          \resumeProjectHeading
+          {\textbf{Spherical Voronoi Diagrams} $|$ \emph{Python, Numpy, Matplotlib}}{December 2022}
+          \resumeItemListStart
+            \resumeItem{Developed Python program employing Spherical Voronoi Diagrams to map Earth's surface.}
+            \resumeItem{Determined vertex coordinates in geographic coordinate
+                        system and accurately measured areas of individual Voronoi polygons,
+                        facilitating spatial analysis and geographic information systems (GIS)
+                        applications.}
+          \resumeItemListEnd
+          \vspace{-15pt}
+
+          \resumeProjectHeading
+          {\textbf{Divorce Prediction Deep Neural Network} $|$ \emph{Python, Tensorflow, Keras, Matplotlib}}{Sep 2022}
+          \resumeItemListStart
+            \resumeItem{Developed an Artificial Neural Network using Python's Keras Sequential API to predict divorce probabilities between couples based on questionnaire data, achieving up to 95\% accuracy.}
+          \resumeItemListEnd
+          \vspace{-15pt}
+
+          \resumeProjectHeading
+          {\textbf{Simulation of Boltzmann Distribution} $|$ \emph{Python, Matplotlib}}{Nov 2022}
+          \resumeItemListStart
+            \resumeItem{Utilized Python to simulate Boltzmann Distribution, effectively modeling the velocity distribution of gas molecules and recovering the characteristic Boltzmann distribution of molecular speeds.}
+          \resumeItemListEnd
+          \vspace{-15pt}
+
+
+          \resumeProjectHeading
+          {\textbf{Custom Linux Configuration} $|$ \emph{Bash, Linux, Python, Lua, Elisp}}{Active}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented a comprehensive Linux Desktop environment in python using Qtile library for efficient multitasking in daily workflow.}
+            \resumeItem{Implemented scripts to deploy and configure system services, automating daily tasks such as automated Git backups, log monitoring, and push notifications for job completions to my Android.}
+            \resumeItem{Maintain a functional Neovim configuration written in
+                        Lua spanning 2,000 lines of code,and an 3K LOC Emacs configuration written in Elisp.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{{\FAS  } Technical Skills}
+ % \begin{itemize}[leftmargin=0.15in, label={}]
+ %    \small{\item{
+ %     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
+ %     \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+ %     \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
+ %    }}
+ % \end{itemize}
+
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.1}
+\setlength{\tabcolsep}{8pt} % Adjust as needed
+\begin{tabular}{ l l }
+    \textbf{Programming Languages}: & Python, Lua, Julia, C, Bash, Mathematica \\
+    \textbf{Libraries}: & Numpy, Pytorch, Matplotlib, Pandas, Qtile, scipy\\
+    \textbf{Operating Systems}: & Debian based Distros, Arch Linux, Fedora, Centos\\
+    \textbf{Tooling}: & GNU Plot, VS Code, Git, Github, Emacs, Neovim \\
+\end{tabular}
+\endgroup
+\vspace{2mm}
+
+
+\vspace{-12pt}
+
+\section{{\FAS  }Online Courses}
+
+% % \renewcommand{\arraystretch}{1.1}
+% \setlength{\tabcolsep}{8pt} % Adjust as needed
+% \begin{tabular}{ p{40mm} p{40mm} }
+%   \textbf{Simulation and modeling of natural processes} \newline \emph{University of Geneva}
+%   & \textbf{Discrete Optimization} \newline  \emph{The University of Melbourne} \\
+% \end{tabular}
+
+% \setlength{\columnsep}{-100pt}
+
+% \begin{multicols}{2}
+%     \begin{itemize}[itemsep=-3pt, parsep=3pt, label=\faCaretRight]
+%         \item \textbf{Simulation and modeling of} \\
+%         \textbf{natural processes} \\
+%         \emph{University of Geneva}
+
+%         \item \textbf{Discrete Optimization} \\
+%         \emph{The University of Melbourne} \\
+
+%         \item \textbf{The Finite Element Method} \\ \textbf{ for Problems in Physics} \\
+%         \emph{University of Michigan}
+%     \end{itemize}
+% \end{multicols}
+
+
+\begingroup
+\small
+
+\begin{multicols}{2}
+    \begin{itemize}[itemsep=0pt, parsep=3pt, label=\faCaretRight]
+
+      \item \parbox[t]{\linewidth}{\textbf{Discrete Optimization} \\
+            \emph{The University of Melbourne}}
+
+      \item \parbox[t]{\linewidth}{\textbf{Simulation and modeling} \\
+            \textbf{of natural processes} \\
+            \emph{University of Geneva}}
+
+      \item \parbox[t]{\linewidth}{\textbf{The Finite Element Method} \\
+            \textbf{ for Problems in Physics} \\
+            \emph{The University of Melbourne}}
+
+      \item \parbox[t]{\linewidth}{\textbf{Julia for Beginners in Data Science} \\
+            \emph{Coursera Project Network }}
+
+      \item \parbox[t]{\linewidth}{\textbf{Crash course in Gnuplot} \\
+            \emph{Coursera Project Network }}
+
+      \item \parbox[t]{\linewidth}{\textbf{Computational Thinking for} \\
+            \textbf{Problem Solving} \\
+            \emph{University of Pennsylvania}}
+
+    \end{itemize}
+\end{multicols}
+
+
+\vspace{-1mm}
+
+ \endgroup
+
+
+\section{{\faPaperPlane[regular] }  Workshops}
+
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{Introduction to Docker}{March 2024}{\textbf{Guest Speaker}}{PIEAS}
+          \vspace{-5pt}
+        \resumeSubheading{Data Science with Python}{Jan 2022}{Attendee}{PIEAS}
+          \vspace{-5pt}
+        \resumeSubheading{Deep Learning and its Application}{Dec 2022}{Attendee}{PIEAS}
+          \vspace{-5pt}
+        \resumeSubheading{Linux for Everyone}{Oct 2022}{\textbf{Guest Speaker}}{PIEAS}
+
+    \resumeSubHeadingListEnd
+
+% \vspace{-12pt}
+%-----------INVOLVEMENT---------------
+\section{{\FAS } Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{PIEAS Society for Physics}{Nov 2021 -- Jan 2023}{President}{PIEAS}
+            \resumeItemListStart
+              \resumeItem{Co-founded the Physics Society at PIEAS, leading a team to establish a platform for academic and social engagement among physics students.}
+              \resumeItem{Organized multiple talks by renowned speakers and researchers, enriching members' understanding of cutting-edge research and developments.}
+              \resumeItem{Led meetings, events, and activities to foster community and collaboration within the physics department.}
+              \resumeItem{Developed strategic initiatives for academic and professional development, including guest lectures and workshops.}
+              \resumeItem{Represented the society in meetings with university stakeholders, advocating for physics students' interests.}
+            \resumeItemListEnd
+
+
+        \resumeSubheading{Step Ahead Welfare Society}{Nov 2020 -- April 2021}{Volunteer}{Rawalpindi}
+            \resumeItemListStart
+              \resumeItem{Taught at a street school camp in Liaquat Bagh, providing essential education to underprivileged children from neighboring slum areas. Implemented educational programs focusing on foundational literacy and numeracy skills.}
+              \resumeItem{Coordinated and executed community outreach initiatives to boost awareness and involvement, leading to a notable increase in attendance and active participation among the target demographic.}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+\end{document}
